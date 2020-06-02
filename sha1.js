@@ -1,7 +1,10 @@
 function SHA1 () {
 
-    var msg = document.getElementById("pwd").value;
-	window.alert("You just typed:  "+ msg)
+    var msg1 = document.getElementById("pwd").value;
+	var msg2 = document.getElementById("pSelect").value;
+	var msg = msg1 + msg2;
+	window.alert("You just typed:  "+ msg1)
+	
     function rotate_left(n,s) {
 
 
@@ -456,6 +459,20 @@ function SHA1 () {
 
 	document.getElementById("passcode").innerHTML = temp;
 
- 
-
 }
+
+
+function copyFunc() {
+  var copyText = document.getElementById("passcode").innerHTML;
+	
+	var dummy = document.createElement("textarea");
+   
+    document.body.appendChild(dummy);
+  
+    dummy.value = copyText;
+    dummy.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummy);
+	alert("Copied to your Clipboard");
+}
+
