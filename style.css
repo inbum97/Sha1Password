@@ -1,0 +1,37 @@
+body {
+	display: grid;
+	background: Azure;
+	text-align: center;
+	padding: 11px;
+	font-size: 1.2em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+	font-size: 1.2rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+label {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+  margin: 1.2em 0;
+}
+
+input, button {
+  font-size: 1.2rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  width: 90%;
+	height: 44px;
+  margin: 0 20px;
+	 box-sizing: border-box;
+border-radius: 4px;
+}
