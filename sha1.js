@@ -1,7 +1,7 @@
 function SHA1 () {
 
     var msg = document.getElementById("pwd").value;
-	window.alert(msg)
+	window.alert("You just typed:  "+ msg)
     function rotate_left(n,s) {
 
 
