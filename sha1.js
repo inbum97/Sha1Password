@@ -452,13 +452,14 @@ function SHA1 () {
     }
 
  
-
+	var sym = ['!','@','#','$','%','^','&','*','{','}'];
+	var randomItem = sym[Math.floor(Math.random()*sym.length)];
 
     var temp = cvt_hex(H0) + cvt_hex(H1) + cvt_hex(H2) + cvt_hex(H3) + cvt_hex(H4);
 
  
 
-	document.getElementById("passcode").innerHTML = temp;
+	document.getElementById("passcode").innerHTML = temp.slice(0,11) + randomItem;
 	popUp();
 
 }
@@ -480,7 +481,6 @@ function copyFunc() {
 function popUp() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
-	popup.classList.toggle("hide");
 	
 }
 function popUp2() {
