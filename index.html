@@ -43,13 +43,18 @@
 </form>
  
 	  
-      <button type = "button" onclick = "SHA1()">Enter</button>
+      <button class = "popup" type = "button" onclick = "SHA1()">Enter
+	  <span class="popuptext" id="myPopup">You entered <p id="typed"></p></span>
+	  </button>
+	  
 	  <h2>
 		  Now your new password is
 	  </h2>
 		<p id="passcode"></p>
-	  <button type = "button" onclick= "copyFunc()" >Copy to Clipboard</button>
-
+	  <button class="popup" type="button" onclick="copyFunc()">Copy to Clipboard
+	<span class="popuptext" id="myPopup2">Copied to your Clipboard!</span>
+</button>
+		
       <hr>
   </header>
   <script src="sha1.js"></script>
