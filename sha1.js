@@ -4,7 +4,7 @@ function SHA1 () {
 	var msg2 = document.getElementById("pSelect").value;
 	var msg = msg1 + msg2;
 	/*window.alert("You just typed:  "+ msg1)*/
-	document.getElementById("typed").innerHTML = msg1;
+	/*document.getElementById("typed").innerHTML = msg1;*/
 	
     function rotate_left(n,s) {
 
@@ -460,7 +460,6 @@ function SHA1 () {
  
 
 	document.getElementById("passcode").innerHTML = temp.slice(0,11) + randomItem;
-	popUp();
 
 }
 
@@ -478,12 +477,19 @@ function copyFunc() {
     document.body.removeChild(dummy);
 	popUp2();
 }
-function popUp() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-	
-}
+
+
 function popUp2() {
   var popup = document.getElementById("myPopup2");
   popup.classList.toggle("show");
+}
+
+
+function myFunction() {
+  var x = document.getElementById("pwd");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
 }

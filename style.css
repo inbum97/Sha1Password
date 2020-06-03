@@ -10,6 +10,13 @@ h2{
 	font-size: 1.2rem;
 }
 
+h3{
+	font-size: 14px;
+	text-align: center;
+	font-weight: lighter;
+	height: 15px;
+}
+
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
