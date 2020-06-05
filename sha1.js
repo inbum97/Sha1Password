@@ -457,10 +457,12 @@ function SHA1 () {
 
     var temp = cvt_hex(H0).slice(0,2) + cvt_hex(H1).toUpperCase().slice(0,3) + cvt_hex(H2).slice(0,2) + cvt_hex(H3).slice(0,2) + cvt_hex(H4).slice(0,2);
 	
-	var loc = temp.slice(0,1).charCodeAt(0) % 10;
-	var symbol = sym[loc];
-
-	document.getElementById("passcode").innerHTML = temp + symbol;
+	var loc1 = temp.slice(0,1).charCodeAt(0) % 10;
+	var loc2 = temp.slice(5,6).charCodeAt(0) % 10;
+	var symbol = sym[loc1];
+	
+	
+	document.getElementById("passcode").innerHTML = temp.slice(0, loc2) + symbol + temp.slice(loc2);
 
 }
 
