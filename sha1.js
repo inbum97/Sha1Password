@@ -11,7 +11,7 @@ function SHA1 () {
 	else{
 		msg = msg1 + msg2;
 	}
-	alert(msg);
+	
 	
 	
 	/*window.alert("You just typed:  "+ msg1)*/
