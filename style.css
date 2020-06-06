@@ -17,6 +17,12 @@ h3{
 	height: 15px;
 }
 
+h4{
+	font-size: 17px;
+	font-weight: lighter;
+	
+}
+
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

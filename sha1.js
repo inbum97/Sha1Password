@@ -2,7 +2,18 @@ function SHA1 () {
 
     var msg1 = document.getElementById("pwd").value;
 	var msg2 = document.getElementById("pSelect").value;
-	var msg = msg1 + msg2;
+	var msg3 = document.getElementById("pSelect1").value.toUpperCase();
+	
+	var msg ="";
+	if (msg2 == "Other"){
+		msg = msg1 + msg3;
+	}
+	else{
+		msg = msg1 + msg2;
+	}
+	alert(msg);
+	
+	
 	/*window.alert("You just typed:  "+ msg1)*/
 	/*document.getElementById("typed").innerHTML = msg1;*/
 	
@@ -496,3 +507,15 @@ function myFunction() {
     x.type = "password";
   }
 }
+
+function CheckSelection(){
+ var element = document.getElementById('pSelect').value;
+ if(element =='Other')
+   document.getElementById('div1').style.display='block';
+ else  
+   document.getElementById('div1').style.display='none';
+}
+
+ function hidefield() {
+ document.getElementById('div1').style.display='none';
+ }

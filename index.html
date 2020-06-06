@@ -4,7 +4,7 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		
+	<body onload="hidefield()">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,48 +12,50 @@
   <link rel="stylesheet" href="styles.css">
 <body>
   <header>
-      <h1>SHA1 Password Generator</h1>
+      <h1>All-in-ONE <br>Password Generator</h1>
       <label for="searchInput">Type anything distinct
 	  </label>
       
-	  <label for="pwd">that you can remember</label><br>
+	  <label for="pwd"> you can remember</label><br>
 <input type="password" id="pwd" name="pwd"><br><h3>
 	  <input type="checkbox" onclick="myFunction()">Show Password<br><br>
 	  </h3>
-	  <label for="platform">Choose a platform to use your password</label>
+	  <label for="platform">Choose a platform to use your new password</label>
 	   <form>
-	<select id="pSelect"  type="A" >
+	<select id="pSelect" onchange = 'CheckSelection()'>
 		<option>Google</option>
-		
+		<option>Apple</option>
 		<option>Facebook</option>
 		<option>Instagram</option>
 		<option>Twitter</option>
-		<option>Amazon</option>
 		<option>Netflix</option>
 		<option>Spotify</option>
-		<option>Reddit</option>
+		<option>Amazon</option>
 		<option>Ebay</option>
-		<option>Yelp</option>
 		<option>Paypal</option>
+		<option>Reddit</option>
 		<option>Target</option>
+		<option>Yelp</option>
 		<option>Chase</option>
 		<option>Wellsfargo</option>
-		<option>BOA</option>
+		<option>BankOfAmerica</option>
 		<option>imdb</option>
 		<option>Fandom</option>
 		<option>Pinterest</option>
-		<option>Tripadvisor</option>
 		<option>Linkedin</option>
-		<option>etsy</option>		
-		<option>Apple</option>
 		<option>Quora</option>
 		<option>Xfinity</option>
 		<option>Yahoo</option>
-		<option>IRS</option>	
-		<option>Naver</option>
+		<option>Other</option>
 	</select>
 </form>
- 
+	  <h4>
+		<div id=div1>Type a platform:
+	<input type="text" name= "pSelect1" id="pSelect1" size ="7" >
+</div>  
+	  </h4>
+	 
+ 	
 	  
       <button  type = "button" onclick = "SHA1()">Enter	  
 	  </button>
