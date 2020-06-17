@@ -1,6 +1,6 @@
 body {
 	display: grid;
-	background: #E6E6FA;
+	background: #708090;
 	text-align: left;
 	padding: 11px;
 	font-size: 1.1em;
@@ -31,7 +31,7 @@ h4{
 	
 }
 button {
-  background-color: #008CBA; /* Green */
+  background-color: #4e5965; /* Green */
   border: none;
   color: white;
   padding: 3px 10px;
@@ -54,8 +54,8 @@ select {
   padding: 3px 20px;
   border: none;
   border-radius: 4px;
-  background-color: #FFF0F5;
-	color: #E9967A;
+  background-color: #121254;
+	color: #ffff1a;
 }
 main {
   display: grid;
@@ -98,8 +98,8 @@ border-radius: 4px;
 
   visibility: hidden;
   width: 160px;
-  background-color: #E6E6FA;
-  color: #F08080;
+  background-color: #121254;
+  color: #ffff1a;
   text-align: center;
   border-radius: 6px;
   padding: 8px 0;
