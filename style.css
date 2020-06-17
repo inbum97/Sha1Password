@@ -1,18 +1,24 @@
 body {
 	display: grid;
 	background: Azure;
-	text-align: center;
+	text-align: left;
 	padding: 11px;
-	font-size: 1.2em;
-	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-family: FreeMono, monospace;
+}
+h1{
+	font-size: 1.6rem;
+	font-family: OCR A Std, monospace;
+	text-align: center;
 }
 h2{
 	font-size: 1.2rem;
+	text-align: center;
 }
 
 h3{
 	font-size: 14px;
-	text-align: center;
+	text-align: left;
 	font-weight: lighter;
 	height: 15px;
 }
@@ -20,16 +26,44 @@ h3{
 h4{
 	font-size: 17px;
 	font-weight: normal;
+	text-align: center;
+	font-family: OCR A Std, monospace;
 	
 }
+button {
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 3px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 6px;
+  transition-duration: 0.4s;
+	border-radius: 12px;
+	outline:none;
+}
 
+button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+select {
+  width: 30%;
+  padding: 3px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #FFF0F5;
+	color: #E9967A;
+}
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
 }
 label {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FreeMono, monospace;
 }
 
 hr {
@@ -38,7 +72,7 @@ hr {
 
 input, button {
   font-size: 1.2rem;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: OCR A Std, monospace;
 }
 
 form {
@@ -47,6 +81,8 @@ form {
   margin: 0 20px;
 	 box-sizing: border-box;
 border-radius: 4px;
+	text-align: left;
+	
 }
 
 /* Popup container */
@@ -54,14 +90,16 @@ border-radius: 4px;
   position: relative;
   display: inline-block;
   cursor: pointer;
+	
 }
 
 /* The actual popup (appears on top) */
 .popup .popuptext {
+
   visibility: hidden;
   width: 160px;
-  background-color: #555;
-  color: #fff;
+  background-color: #E6E6FA;
+  color: #F08080;
   text-align: center;
   border-radius: 6px;
   padding: 8px 0;
@@ -70,6 +108,7 @@ border-radius: 4px;
   bottom: 125%;
   left: 50%;
   margin-left: -80px;
+	border: none;
 }
 
 /* Popup arrow */
@@ -89,6 +128,7 @@ border-radius: 4px;
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s
+	 
 	
 }
 
@@ -105,12 +145,6 @@ border-radius: 4px;
   to {opacity:1 ;}
 }
 
-@-webkit-keyframes fadeOut {
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
 
-@keyframes fadeOut {
-   from 0% {opacity: 1;}
-   to 100% {opacity: 0;} 
-} 
+
+

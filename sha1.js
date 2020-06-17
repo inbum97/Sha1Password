@@ -13,10 +13,7 @@ function SHA1 () {
 	}
 	
 	
-	
-	/*window.alert("You just typed:  "+ msg1)*/
-	/*document.getElementById("typed").innerHTML = msg1;*/
-	
+
     function rotate_left(n,s) {
 
 
@@ -492,6 +489,15 @@ function copyFunc() {
 	popUp2();
 }
 
+function popUp4() {
+  var popup = document.getElementById("myPopup4");
+  popup.classList.toggle("show");
+}
+
+function popUp3() {
+  var popup = document.getElementById("myPopup3");
+  popup.classList.toggle("show");
+}
 
 function popUp2() {
   var popup = document.getElementById("myPopup2");
@@ -519,3 +525,6 @@ function CheckSelection(){
  function hidefield() {
  document.getElementById('div1').style.display='none';
  }
+
+
+
