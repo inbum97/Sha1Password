@@ -463,7 +463,7 @@ function SHA1 () {
 	var sym = ['!','@','#','$','%','^','&','*','{','}'];
 	/*var randomItem = sym[Math.floor(Math.random()*sym.length)];*/
 
-    var temp = cvt_hex(H0).slice(0,2) + cvt_hex(H1).toUpperCase().slice(0,3) + cvt_hex(H2).slice(0,2) + cvt_hex(H3).slice(0,2) + cvt_hex(H4).slice(0,2);
+    var temp = cvt_hex(H0).slice(0,2) + cvt_hex(H1).toUpperCase().slice(0,3) + cvt_hex(H2).slice(0,2) + cvt_hex(H3).toUpperCase().slice(0,2) + cvt_hex(H4).slice(0,2);
 	
 	var loc1 = temp.slice(0,1).charCodeAt(0) % 10;
 	var loc2 = temp.slice(5,6).charCodeAt(0) % 10;
